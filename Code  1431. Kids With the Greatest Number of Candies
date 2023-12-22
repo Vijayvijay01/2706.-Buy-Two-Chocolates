@@ -1,0 +1,22 @@
+class Solution {
+    public List<Boolean> kidsWithCandies(int[] arr, int ex){
+    ArrayList<Boolean> al=new ArrayList<>();
+    int max=0;
+    for(int i=0;i<arr.length;i++){
+        if(arr[i]>max)
+        max=arr[i];
+
+
+    }
+    for(int i=0;i<arr.length;i++){
+        if(arr[i]+ex>=max)
+            al.add(true);
+            //else if()
+            else
+            al.add(false);
+        }
+        return al;
+    
+    }  
+}   
+   
